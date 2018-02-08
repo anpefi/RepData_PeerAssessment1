@@ -31,7 +31,7 @@ activity <- readr::read_csv("activity.csv",
 ### 1. Make a histogram of the total number of steps taken each day
 First, we need to summarise the number of steps grouped by each day, the we can make a quick histogram with the default binwidth.
 
-```{r message=FALSE, warning=FALSE}
+```{r Fig1, message=FALSE, warning=FALSE}
 total_steps_day <- activity %>% 
   group_by(date) %>% 
   summarise(total_steps_day=sum(steps)) 
@@ -59,7 +59,7 @@ total_steps_day %>%
 
 First, I need to compute the interval averaged number of steps, then we can plot it.
 
-```{r}
+```{r Fig2}
 steps_interval <- activity %>% 
   group_by(interval) %>% 
   summarise(avg_steps_taken = mean(steps, na.rm = TRUE))
@@ -108,7 +108,7 @@ activity_fixed
 
 ### 4. Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
-```{r message=FALSE, warning=FALSE}
+```{r Fig3, message=FALSE, warning=FALSE}
 total_steps_day_fixed <- activity_fixed %>% 
   group_by(date) %>% 
   summarise(total_steps_day=sum(steps)) 
@@ -145,7 +145,7 @@ activity_week <- activity_fixed %>%
 
 First activity data are filtered by weekday or weekend
 
-```{r}
+```{r Fig4}
 steps_interval_week <- activity_week %>% 
   group_by(interval, type_day) %>% 
   summarise(avg_steps_taken = mean(steps, na.rm = TRUE)) 

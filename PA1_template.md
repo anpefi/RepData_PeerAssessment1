@@ -46,7 +46,7 @@ total_steps_day %>%
     labs(x="Total number of steps taken in a day", y="Number of days") 
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+![](PA1_template_files/figure-html/Fig1-1.png)<!-- -->
  
 ### 2. Calculate and report the mean and median total number of steps taken per day
    
@@ -86,7 +86,7 @@ steps_interval %>%
     labs(x="5-minute interval", y="Average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](PA1_template_files/figure-html/Fig2-1.png)<!-- -->
 
 
 ### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -172,7 +172,7 @@ total_steps_day_fixed %>%
     labs(x="Total number of steps taken in a day", y="Number of days") 
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](PA1_template_files/figure-html/Fig3-1.png)<!-- -->
 
 
 ```r
@@ -220,7 +220,7 @@ steps_interval_week %>%
     labs(x="5-minute interval", y="Average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/Fig4-1.png)<!-- -->
 
 ### SessionInfo
 
